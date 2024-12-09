@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(mobil.jpg);
+    background-size: cover;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    align-content: center;
+}
+
+svg path {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-dasharray: 50;
+    animation: textAnimation 4s ease-in-out 1 forwards;
+    -webkit-animation: textAnimation 5s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        stroke-dashoffset: 150;
+    }
+    100% {
+        fill: #ddd8d8;
+        stroke-dashoffset: 0;
+    }
+}
